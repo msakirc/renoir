@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "renoir"
+version = "0.1.0"
+description = "Cheap sanity check for generated images: catches empty, non-image, tiny, oversized and blank outputs."
+readme = "README.md"
+license = "MIT"
+authors = [{ name = "Sakir Cimen" }]
+keywords = ["image-validation", "image-generation", "pillow", "kutai"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Multimedia :: Graphics",
+]
+requires-python = ">=3.10"
+dependencies = ["pillow>=10"]
+
+[project.urls]
+Homepage = "https://github.com/msakirc/renoir"
+Repository = "https://github.com/msakirc/renoir"
+Monorepo = "https://github.com/msakirc/kutai/tree/main/packages/renoir"
+
+[tool.setuptools.packages.find]
+where = ["src"]
